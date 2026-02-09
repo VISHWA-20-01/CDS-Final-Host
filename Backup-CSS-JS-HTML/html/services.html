@@ -7,7 +7,8 @@
     <title>Our Services - Caribbean Digital Solutions</title>
     <meta name="description"
         content="End-to-end digital transformation services including AI, data science, product engineering, and quality assurance.">
-    <meta name="keywords" content="AI services, data science, Caribbean tech, custom software, digital transformation">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#4C1D95">
     <link rel="canonical" href="https://cdsgroups.com/services.html">
 
     <!-- Open Graph -->
@@ -17,57 +18,83 @@
     <meta property="og:description"
         content="End-to-end digital transformation services including AI, data science, product engineering, and quality assurance.">
     <meta property="og:image" content="https://cdsgroups.com/assets/images/og-services.jpg">
+    <meta property="og:site_name" content="Caribbean Digital Solutions">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Our Services - Caribbean Digital Solutions">
     <meta property="twitter:description" content="Transforming Caribbean businesses with AI and digital solutions.">
     <meta property="twitter:image" content="https://cdsgroups.com/assets/images/og-services.jpg">
+    <meta name="twitter:creator" content="@CDSGroups">
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <!-- Styles - Modular CSS -->
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/navigation.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/sections.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- Schema.org -->
+    <!-- ⚡ PHASE 1.5: Resource Hints (Optimized) -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="assets/css/main.min.css" as="style">
+    <link rel="preload" href="assets/fonts/system-fonts.css" as="style">
+
+    <!-- ⚡ PHASE 1.5: System Fonts (Zero External Requests) -->
+    <link rel="stylesheet" href="assets/fonts/system-fonts.css">
+
+    <!-- ⚡ PHASE 1.5: Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
+    <!-- ⚡ PHASE 1.5: Defer FontAwesome & AOS (load after page render) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    </noscript>
+
+    <!-- Schema.org - Service & Breadcrumb -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Digital Transformation Consulting",
-      "provider": {
-        "@type": "Organization",
-        "name": "Caribbean Digital Solutions"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Digital Transformation Consulting",
+        "provider": {
+          "@type": "Organization",
+          "name": "Caribbean Digital Solutions"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Caribbean"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Digital Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI & Data Science" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud Migration" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Software Development" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Quality Engineering" } }
+          ]
+        }
       },
-      "areaServed": {
-        "@type": "Place",
-        "name": "Caribbean"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Digital Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI & Data Science" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud Migration" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Software Development" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Quality Engineering" } }
-        ]
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cdsgroups.com"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://cdsgroups.com/services.html"
+        }]
       }
-    }
+    ]
     </script>
 </head>
 
@@ -549,15 +576,9 @@
         </div>
     </footer>
 
-    <!-- Scripts - Modular JavaScript -->
+    <!-- Scripts - Optimized Single File -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
-    <script src="assets/js/navigation.js" defer></script>
-    <script src="assets/js/animations.js" defer></script>
-    <script src="assets/js/counters.js" defer></script>
-    <script src="assets/js/forms.js" defer></script>
-    <script src="assets/js/utils.js" defer></script>
-    <script src="assets/js/carousel.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/main.min.js" defer></script>
 </body>
 
 </html>
