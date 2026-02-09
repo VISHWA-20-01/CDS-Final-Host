@@ -32,16 +32,21 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap"
-        rel="stylesheet">
+    <!-- ⚡ PHASE 1.5: System Fonts (Zero External Requests) -->
+    <link rel="stylesheet" href="assets/fonts/system-fonts.css">
 
     <!-- Optimized CSS - Single Minified File -->
     <link rel="stylesheet" href="assets/css/main.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    </noscript>
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
@@ -361,9 +366,9 @@
                 </p>
                 <div class="footer-legal">
                     <a href="privacy-policy.html">Privacy Policy</a>
-                    <span class="separator">â€¢</span>
+                    <span class="separator">•</span>
                     <a href="terms-of-service.html">Terms of Service</a>
-                    <span class="separator">â€¢</span>
+                    <span class="separator">•</span>
                     <a href="cookie-policy.html">Cookie Policy</a>
                 </div>
             </div>

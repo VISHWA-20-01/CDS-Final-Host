@@ -29,17 +29,30 @@
     <meta property="twitter:image" content="https://cdsgroups.com/assets/images/og-impact.jpg">
     <meta name="twitter:creator" content="@CDSGroups">
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap"
-        rel="stylesheet">
-    <!-- Optimized CSS - Single Minified File -->
+    <!-- ⚡ PHASE 1.5: Resource Hints (Optimized) -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="assets/css/main.min.css" as="style">
+    <link rel="preload" href="assets/fonts/system-fonts.css" as="style">
+
+    <!-- ⚡ PHASE 1.5: System Fonts (Zero External Requests) -->
+    <link rel="stylesheet" href="assets/fonts/system-fonts.css">
+
+    <!-- ⚡ PHASE 1.5: Main CSS -->
     <link rel="stylesheet" href="assets/css/main.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- ⚡ PHASE 1.5: Defer FontAwesome & AOS (load after page render) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    </noscript>
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
@@ -341,9 +354,9 @@
                 </p>
                 <div class="footer-legal">
                     <a href="privacy-policy.html">Privacy Policy</a>
-                    <span class="separator">â€¢</span>
+                    <span class="separator">•</span>
                     <a href="terms-of-service.html">Terms of Service</a>
-                    <span class="separator">â€¢</span>
+                    <span class="separator">•</span>
                     <a href="cookie-policy.html">Cookie Policy</a>
                 </div>
             </div>

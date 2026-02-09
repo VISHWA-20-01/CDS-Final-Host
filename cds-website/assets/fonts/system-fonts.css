@@ -1,0 +1,48 @@
+/* System Font Stack - Zero External Requests */
+/* This replaces Google Fonts with high-quality system fonts */
+
+@font-face {
+    font-family: 'Inter Fallback';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arial'), local('Helvetica Neue'), local('Helvetica'), local('sans-serif');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Fallback';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Arial Bold'), local('Helvetica Neue Bold'), local('Helvetica Bold');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Fallback';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Arial Bold'), local('Helvetica Neue Bold'), local('Helvetica Bold');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk Fallback';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Arial'), local('Helvetica Neue'), local('Helvetica');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk Fallback';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Arial Bold'), local('Helvetica Neue Bold'), local('Helvetica Bold');
+    font-display: swap;
+}
+
+/* Update CSS Variables */
+:root {
+    --font-primary: 'Inter Fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    --font-display: 'Space Grotesk Fallback', var(--font-primary);
+}
