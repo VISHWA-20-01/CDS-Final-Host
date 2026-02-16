@@ -1,11 +1,5 @@
 # 🌐 Caribbean Digital Solutions - Website Project (Final Release)
 
-**Professional business website showcasing digital transformation services**
-
-[![Netlify Status](https://img.shields.io/badge/Netlify-Deployed-success)](https://www.thecdsgroups.com)
-[![Performance](https://img.shields.io/badge/Mobile-88%2F100-green)](https://pagespeed.web.dev/)
-[![Desktop](https://img.shields.io/badge/Desktop-96%2F100-brightgreen)](https://pagespeed.web.dev/)
-
 ---
 
 ## 🚀 **CLIENT DEPLOYMENT GUIDE (AWS S3)**
