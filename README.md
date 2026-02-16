@@ -1,11 +1,39 @@
-# 🌐 Caribbean Digital Solutions - Website Project
+# 🌐 Caribbean Digital Solutions - Website Project (Final Release)
 
 **Professional business website showcasing digital transformation services**
 
-[![Netlify Status](https://img.shields.io/badge/Netlify-Deployed-success)](https://silver-kringle-5b7f62.netlify.app)
+[![Netlify Status](https://img.shields.io/badge/Netlify-Deployed-success)](https://www.thecdsgroups.com)
 [![Performance](https://img.shields.io/badge/Mobile-88%2F100-green)](https://pagespeed.web.dev/)
-[![Performance](https://img.shields.io/badge/Desktop-96%2F100-brightgreen)](https://pagespeed.web.dev/)
-[![License](https://img.shields.io/badge/License-Proprietary-red)]()
+[![Desktop](https://img.shields.io/badge/Desktop-96%2F100-brightgreen)](https://pagespeed.web.dev/)
+
+---
+
+## 🚀 **CLIENT DEPLOYMENT GUIDE (AWS S3)**
+
+This repository contains the **Final Release** of the website. 
+
+### **📂 Deployment Folder:**
+**👉 `cds-website/`** 
+*(This is the ONLY folder you need to upload to AWS S3)*
+
+### **✅ Steps to Deploy:**
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/Ajaytata123/CDS-Final-.git
+   ```
+2. **Navigate to the deployment folder:**
+   ```bash
+   cd cds-website
+   ```
+3. **Upload to AWS S3:**
+   - Copy all contents of `cds-website/` to your S3 bucket.
+   - Ensure `index.html`, `sitemap.xml`, and `robots.txt` are at the root of the bucket.
+
+### **📄 Key Files/Folders in `cds-website/`:**
+- `index.html` (Homepage)
+- `assets/` (CSS, JS, Images, Fonts)
+- `sitemap.xml` & `robots.txt` (SEO)
+- All other `.html` pages (About, Services, etc.)
 
 ---
 
