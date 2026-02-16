@@ -413,23 +413,26 @@
 }
 
 .step-list {
-    padding-left: var(--spacing-md);
+    padding-left: 0;
+    list-style: none;
 }
 
 .step-list li {
     position: relative;
-    padding-left: var(--spacing-md);
+    padding-left: 0;
     margin-bottom: var(--spacing-sm);
     color: var(--gray-500);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
 }
 
-.step-list li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
+.step-list li i {
     color: var(--primary-600);
-    font-weight: 700;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
 }
+
 
 /* ===================================
    Case Studies Page

@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initLazyLoading();
     initServicesCarousel();
     initCookieBanner(); // Initialize Cookie Banner
+    initBackToTop(); // Initialize Back to Top button
 });
 
 // Console Branding
@@ -82,5 +83,31 @@ function initCookieBanner() {
         localStorage.setItem('cds_cookie_consent', 'false');
         banner.classList.remove('show');
         setTimeout(() => banner.remove(), 500);
+    });
+}
+
+/* ===================================
+   Back to Top Button Logic
+   =================================== */
+function initBackToTop() {
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    if (!backToTopBtn) return;
+
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+
+    // Smooth scroll to top on click
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 }

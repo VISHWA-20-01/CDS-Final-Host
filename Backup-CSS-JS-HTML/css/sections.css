@@ -1202,23 +1202,26 @@
 }
 
 .step-list {
-    padding-left: var(--spacing-md);
+    padding-left: 0;
+    list-style: none;
 }
 
 .step-list li {
     position: relative;
-    padding-left: var(--spacing-md);
+    padding-left: 0;
     margin-bottom: var(--spacing-sm);
     color: var(--gray-500);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
 }
 
-.step-list li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
+.step-list li i {
     color: var(--primary-600);
-    font-weight: 700;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
 }
+
 
 /* ===================================
    Case Studies Page
@@ -2350,117 +2353,112 @@
     font-size: 1.25rem;
 }
 
-/* Right Side: Form */
-.cta-form-container {
+/* Right Side: Email CTA */
+.cta-email-container {
     background: #ffffff;
-    padding: 2.5rem;
+    padding: 3rem;
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px;
+    border: 1px solid rgba(139, 92, 246, 0.1);
 }
 
-.contact-form .form-group {
-    position: relative;
-    margin-bottom: 1.75rem;
-}
-
-.form-input {
+.email-card {
+    text-align: center;
     width: 100%;
-    padding: 1rem 1.25rem;
-    border: 2px solid #e5e7eb;
-    border-radius: 10px;
-    font-size: 1rem;
-    color: #111827;
-    background: #f9fafb;
-    transition: all 0.3s ease;
-    font-family: inherit;
 }
 
-.form-input:focus {
-    outline: none;
-    border-color: #8b5cf6;
-    background: #ffffff;
-    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1);
-}
-
-.form-label {
-    position: absolute;
-    left: 1.25rem;
-    top: 1rem;
-    color: #4b5563;
-    /* Improved contrast */
-    font-size: 1rem;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    background: #f9fafb;
-    padding: 0 0.5rem;
-}
-
-.form-input:focus+.form-label,
-.form-input:not(:placeholder-shown)+.form-label {
-    top: -0.6rem;
-    left: 0.75rem;
-    font-size: 0.8rem;
-    color: #8b5cf6;
+.email-label {
+    display: block;
+    font-size: 0.95rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
     font-weight: 600;
-    background: #ffffff;
 }
 
-.form-input:focus+.form-label {
-    background: #ffffff;
-}
-
-textarea.form-input {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.btn-submit {
-    width: 100%;
-    padding: 1.1rem 2rem;
-    background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.05rem;
-    font-weight: 600;
-    cursor: pointer;
+.email-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(217, 70, 239, 0.1) 100%);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    margin: 0 auto 1.5rem;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.btn-submit:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(139, 92, 246, 0.4);
+.email-icon i {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.btn-submit:active {
-    transform: translateY(0);
+.email-card:hover .email-icon {
+    transform: scale(1.1) rotate(5deg);
 }
 
-.btn-submit i {
-    transition: transform 0.3s ease;
-}
-
-.btn-submit:hover i {
-    transform: translateX(4px);
-}
-
-.form-privacy {
-    text-align: center;
-    font-size: 0.85rem;
-    color: #4b5563;
-    /* Improved contrast */
-    margin-top: 1.25rem;
-    margin-bottom: 0;
-}
-
-.form-privacy i {
+.email-link {
+    display: inline-block;
+    font-size: 1.35rem;
+    font-weight: 700;
     color: #8b5cf6;
-    margin-right: 0.5rem;
+    /* Primary Purple */
+    text-decoration: none;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+    position: relative;
+    word-break: break-all;
+    font-family: inherit;
+
+    /* Button Styling */
+    background-color: rgba(139, 92, 246, 0.08);
+    /* Light purple background */
+    border: 2px solid rgba(139, 92, 246, 0.3);
+    /* Visible purple border */
+    padding: 0.8rem 1.75rem;
+    border-radius: 50px;
+    /* Pill shape */
+}
+
+.email-link::after {
+    display: none;
+}
+
+.email-link:hover {
+    background-color: #8b5cf6;
+    color: #ffffff;
+    /* White text on hover */
+    border-color: #8b5cf6;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.25);
+}
+
+/* Mobile Tweaks for Email Card */
+@media (max-width: 480px) {
+    .cta-email-container {
+        padding: 2rem;
+    }
+
+    .email-link {
+        font-size: 1.25rem;
+    }
+
+    .email-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .email-icon i {
+        font-size: 1.75rem;
+    }
 }
 
 /* Responsive */
