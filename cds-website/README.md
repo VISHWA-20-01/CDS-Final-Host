@@ -165,7 +165,7 @@ See the `docs/` folder for detailed documentation:
 - **Total:** $1-11/month
 
 ## 📧 Contact
-**Email:** connect@cdsgroups.com  
+**Email:** sathish@cdsgroups.com  
 **Website:** https://cdsgroups.com (coming soon)
 
 ## 📄 License
